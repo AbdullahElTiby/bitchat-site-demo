@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitChat - Decentralized Peer-to-Peer Messaging</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="vertical-nav">
+        <div class="nav-content">
+            <div class="nav-top">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.png" alt="BitChat Logo">
+                    <span>BitChat</span>
+                </a>
+            </div>
+            
+            <nav class="nav-middle">
+                <a href="#hero" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#features" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Features</span>
+                </a>
+                <a href="#use-cases" class="nav-link">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Use Cases</span>
+                </a>
+                <a href="#download" class="nav-link">
+                    <i class="fas fa-download"></i>
+                    <span>Download</span>
+                </a>
+                <a href="#documentation" class="nav-link">
+                    <i class="fas fa-book"></i>
+                    <span>Documentation</span>
+                </a>
+                <a href="#contributors" class="nav-link">
+                    <i class="fas fa-users"></i>
+                    <span>Contributors</span>
+                </a>
+                <a href="#contribute" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Contribute</span>
+                </a>
+            </nav>
+
+            <div class="nav-bottom">
+                <a href="#features" class="btn">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>Get Started</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fixed Section Navigation -->
+    <div class="section-nav">
+        <a href="#hero" class="nav-dot active" data-section="hero">
+            <span class="nav-label">Home</span>
+        </a>
+        <a href="#features" class="nav-dot" data-section="features">
+            <span class="nav-label">Features</span>
+        </a>
+        <a href="#use-cases" class="nav-dot" data-section="use-cases">
+            <span class="nav-label">Use Cases</span>
+        </a>
+        <a href="#download" class="nav-dot" data-section="download">
+            <span class="nav-label">Download</span>
+        </a>
+        <a href="#documentation" class="nav-dot" data-section="documentation">
+            <span class="nav-label">Documentation</span>
+        </a>
+        <a href="#contributors" class="nav-dot" data-section="contributors">
+            <span class="nav-label">Contributors</span>
+        </a>
+        <a href="#contribute" class="nav-dot" data-section="contribute">
+            <span class="nav-label">Contribute</span>
+        </a>
+    </div>
+
+    <div class="horizontal-scroll-wrapper">
+        <main>
+            <section id="hero" class="hero fullscreen-section active">
+                <div class="bluetooth-mesh">
+                    <canvas id="bluetoothCanvas"></canvas>
+                </div>
+                <div class="container">
+                    <h1 class="animate-float">Secure, Offline Messaging Anywhere</h1>
+                    <p>Decentralized peer-to-peer messaging that operates over Bluetooth mesh networks. No internet required, no servers, no phone numbers.</p>
+                    <div class="animate-pulse">
+                        <a href="#download" class="btn">
+                            <span>Download Now</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features" class="features-section fullscreen-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Why Choose BitChat?</h2>
+                        <p>Experience the freedom of truly decentralized communication</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-signal"></i>
+                            </div>
+                            <h3>Offline Messaging</h3>
+                            <p>Send and receive messages without internet connectivity using Bluetooth mesh networks.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h3>End-to-End Encryption</h3>
+                            <p>Your messages are encrypted and can only be read by intended recipients.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-eye-slash"></i>
+                            </div>
+                            <h3>No Tracking</h3>
+                            <p>Completely decentralized with no central servers or tracking mechanisms.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="use-cases" class="use-cases-section fullscreen-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Perfect For</h2>
+                        <p>BitChat enables communication in various challenging scenarios</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <h3>Remote Areas</h3>
+                            <p>Stay connected in areas with limited or no internet connectivity.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3>Emergency Response</h3>
+                            <p>Maintain communication during natural disasters or emergencies.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Community Networks</h3>
+                            <p>Build resilient local communication networks for your community.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="download" class="download-section fullscreen-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Get BitChat Now</h2>
+                        <p>Choose your platform and start communicating freely</p>
+                    </div>
+                    
+                    <!-- Simple View -->
+                    <div class="download-simple active" id="simple-view">
+                        <div class="view-toggle simple-view-toggle">
+                            <button class="toggle-btn active" data-view="simple">
+                                <i class="fas fa-mobile-alt"></i>
+                                Simple
+                            </button>
+                            <button class="toggle-btn" data-view="detailed">
+                                <i class="fas fa-code-branch"></i>
+                                Detailed
+                            </button>
+                        </div>
+                        <div class="download-buttons">
+                            <a href="#" class="platform-btn" id="ios-download">
+                                <i class="fab fa-apple"></i>
+                                <div>
+                                    <small>Download for</small>
+                                    <strong>iOS (TestFlight)</strong>
+                                </div>
+                            </a>
+                            <a href="#" class="platform-btn" id="android-download">
+                                <i class="fab fa-android"></i>
+                                <div>
+                                    <small>Download for</small>
+                                    <strong class="version-tag">Android</strong>
+                                    <span class="version-info"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Detailed View -->
+                    <div class="download-detailed" id="detailed-view">
+                        <div class="releases-header">
+                            <h3>Release History</h3>
+                            <div class="view-toggle">
+                                <button class="toggle-btn" data-view="simple">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    Simple
+                                </button>
+                                <button class="toggle-btn active" data-view="detailed">
+                                    <i class="fas fa-code-branch"></i>
+                                    Detailed
+                                </button>
+                            </div>
+                        </div>
+                        <div class="releases-container" id="releases-list">
+                            <div class="loading-releases">
+                                <i class="fas fa-circle-notch fa-spin"></i>
+                                Loading releases...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- View Toggle Button for Mobile -->
+                    <div class="mobile-view-toggle">
+                        <button class="toggle-view-btn">
+                            <i class="fas fa-code-branch"></i>
+                            Show Technical Details
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="documentation" class="documentation-section fullscreen-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Documentation</h2>
+                        <p>Learn how to use and integrate BitChat into your projects</p>
+                    </div>
+                    <div class="readme-content">
+                        <div class="readme-header">
+                            <div class="readme-header-top">
+                                <h3>
+                                    <i class="fab fa-android"></i>
+                                    BitChat Android Documentation
+                                </h3>
+                                <a href="https://github.com/permissionlesstech/bitchat-android" target="_blank" class="repo-link">
+                                    <i class="fab fa-github"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                            <div class="readme-dates">
+                                <span class="last-updated">
+                                    <i class="fas fa-code-commit"></i>
+                                    Last updated: <time id="last-updated-date">Loading...</time>
+                                </span>
+                                <span class="last-fetched">
+                                    <i class="fas fa-sync"></i>
+                                    Last fetched: <time id="last-fetched-date">Loading...</time>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="readme-container" class="markdown-body">
+                            <div class="readme-loading">
+                                <i class="fas fa-circle-notch fa-spin"></i>
+                                Loading documentation...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contributors" class="contributors-section fullscreen-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Top Contributors</h2>
+                        <p>The amazing people behind BitChat's development</p>
+                    </div>
+                    
+                    <div class="contributors-grid" id="contributors-list">
+                        <div class="loading-contributors">
+                            <i class="fas fa-circle-notch fa-spin"></i>
+                            Loading contributors...
+                        </div>
+                    </div>
+
+                    <div class="contribution-stats">
+                        <div class="stats-header">
+                            <h3>Contribution Statistics</h3>
+                            <div class="stats-period">
+                                <select id="stats-period">
+                                    <option value="week">This Week</option>
+                                    <option value="month">This Month</option>
+                                    <option value="year">This Year</option>
+                                    <option value="all" selected>All Time</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="stats-grid" id="stats-container">
+                            <div class="stats-card">
+                                <i class="fas fa-users"></i>
+                                <div class="stats-info">
+                                    <h4>Contributors</h4>
+                                    <div class="stats-value">...</div>
+                                </div>
+                            </div>
+                            <div class="stats-card">
+                                <i class="fas fa-code-branch"></i>
+                                <div class="stats-info">
+                                    <h4>Forks</h4>
+                                    <div class="stats-value">...</div>
+                                </div>
+                            </div>
+                            <div class="stats-card">
+                                <i class="fas fa-eye"></i>
+                                <div class="stats-info">
+                                    <h4>Watchers</h4>
+                                    <div class="stats-value">...</div>
+                                </div>
+                            </div>
+                            <div class="stats-card">
+                                <i class="fas fa-star"></i>
+                                <div class="stats-info">
+                                    <h4>Stars</h4>
+                                    <div class="stats-value">...</div>
+                                </div>
+                            </div>
+                            <div class="stats-card">
+                                <i class="fas fa-code-commit"></i>
+                                <div class="stats-info">
+                                    <h4>Commits</h4>
+                                    <div class="stats-value">...</div>
+                                </div>
+                            </div>
+                            <div class="stats-card">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <div class="stats-info">
+                                    <h4>Open Issues</h4>
+                                    <div class="stats-value">...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contribute" class="features-section fullscreen-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Contribute to BitChat</h2>
+                        <p>BitChat is open source and released into the public domain. Help us make communication more accessible to everyone.</p>
+                    </div>
+                    <div style="text-align: center; margin-top: var(--spacing-md)">
+                        <a href="https://github.com/permissionlesstech/bitchat" class="btn">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/readme-loader.js"></script>
+    <script type="module" src="assets/js/readme-scroll.js"></script>
+    <script type="module" src="assets/js/config.js"></script>
+    <script type="module" src="assets/js/releases.js"></script>
+    <script src="assets/js/releases-scroll.js"></script>
+    <script type="module" src="assets/js/contributors.js"></script>
+    <script src="assets/js/contributors-scroll.js"></script>
+    <script type="module" src="assets/js/github-stats.js"></script>
+</body>
+</html> 
